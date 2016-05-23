@@ -27,7 +27,7 @@ Connection > Proxy:
 	Username:
 		proxyuser
 	Telnet command, or local proxy command:
-		E:\your\path\to\PLINK.EXE -i e:\your\path\to\\new\certificates\key-for-MYPROXYHOST.ppk %user@%proxyhost -nc %host:%port
+		E:\your\path\to\PLINK.EXE -i e:\your\path\to\\new\certificates\key-for-MYPROXYHOST.ppk -P %proxyport %user@%proxyhost -nc %host:%port
 		NOTE THE DOUBLE BACKSLASH IN FRONT OF "new". The telnet command seems to interpret \n as a newline character.
 Connection > SSH > Auth:
 	Authentication parameters:
